@@ -1,5 +1,22 @@
 {
-  "name": "component-library",
+  "name": "react-design-systems",
+  "description": "Design systems with Reatc.js, Styled Components, Storybook",
+  "author": {
+    "email": "suriram.sam@gmail.com",
+    "name": "Suresha Ramappa",
+    "url": "https://github.com/suresharam"
+  },
+  "repository": {
+    "url": "https://github.com/suresharam/react-design-systems.git",
+    "type": "git"
+  },
+  "keywords": [
+    "React.js",
+    "styled-components",
+    "storybook",
+    "designs-sysems",
+    "Javascript"
+  ],
   "version": "0.1.0",
   "private": true,
   "dependencies": {
