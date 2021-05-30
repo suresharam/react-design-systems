@@ -1,25 +1,26 @@
-import { createGlobalStyle } from 'styled-components';
-import { primaryFont } from './typography';
-import { normalize } from 'polished';
+import { createGlobalStyle } from "styled-components";
+import { primaryFont } from "./typography";
+import { normalize } from "polished";
 
-export const GlobalStyles = createGlobalStyle`
-  ${normalize()}
-  html {
-    font-size: 16px;
-    box-sizing: border-box;
-  }
+export const GlobalStyle = createGlobalStyle`
+${normalize()}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 65px 0 0;
+  font-family: ${primaryFont}
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-
-  body {
-    margin: 0;
-    font-family: ${primaryFont};
-  }
-
-  main {
-    width: 90%;
-    margin: 0 auto;
-  }
+main {
+  width: 90%;
+  margin: 0 auto;
+}
 `;
